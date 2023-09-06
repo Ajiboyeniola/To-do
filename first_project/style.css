@@ -22,7 +22,17 @@ h1 {
   font-size: 32px;
   color: #11175e;
   font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Date */
+.date-container {
   margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.date {
+  cursor: pointer;
 }
 
 .input-container {
@@ -43,7 +53,13 @@ h1 {
   color: #b1bacb;
 }
 
-.btn {
+#add:focus {
+  border-color: transparent;
+  outline: none;
+  color: #333;
+}
+
+#btn {
   cursor: pointer;
   width: 20%;
   padding: 8px;
@@ -71,7 +87,7 @@ section {
 
 /* Label style */
 .checkbox-label {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -86,6 +102,7 @@ section {
 
 /* Create a custom checkbox */
 .check + span:before {
+  /* content: ""; */
   content: "";
   display: inline-block;
   width: 24px;
@@ -97,6 +114,11 @@ section {
   vertical-align: middle;
 }
 
+/* .check:checked {
+  color: #555;
+  text-decoration: line-through;
+} */
+
 .check:checked + .checkbox-label:before {
   background-color: #f00cd9;
 }
@@ -105,11 +127,18 @@ section {
   color: #f00cd9;
 }
 
-hr {
+.delete-button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* hr {
   border: none;
   height: 1px;
   background-color: #eee;
-}
+} */
 
 .footer {
   display: flex;
@@ -118,7 +147,7 @@ hr {
 
 .created {
   width: 80%;
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
 }
 
@@ -127,6 +156,7 @@ hr {
   width: 20%;
   border: none;
   background: none;
-  font-size: 18px;
-  color: #333;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #2d70fd;
 }
